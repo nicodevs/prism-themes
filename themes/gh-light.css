@@ -1,0 +1,133 @@
+/**
+ * GH Light theme for Prism.JS
+ *
+ * @author Nico Devs
+ * @license MIT 2025
+ */
+
+:root {
+    --gh-color-black: #1F2328;
+    --gh-color-blue: #0969da;
+    --gh-color-darkblue: #0a3069;
+    --gh-color-red: #cf222e;
+    --gh-color-purple: #6639BA;
+    --gh-color-navy: #0550AE;
+    --gh-color-gray: #59636E;
+    --gh-color-green: #28a745;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    font-family: monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    font-size: 0.875rem;
+    line-height: 2;
+    tab-size: 4;
+    hyphens: none;
+    color: var(--gh-color-black);
+}
+
+pre::-moz-selection, pre ::-moz-selection,
+code::-moz-selection, code ::-moz-selection,
+pre::selection, pre ::selection,
+code::selection, code ::selection {
+    background: #0969da20;
+}
+
+pre[class*="language-"] {
+    padding: 1em;
+    overflow: auto;
+    background-color: #ffffff;
+}
+
+:not(pre) > code[class*="language-"] {
+    padding: .125rem .375rem;
+    background: #f3f7f9;
+    border-radius: .25rem;
+}
+
+.token.bold {
+    font-weight: bold;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: var(--gh-color-gray);
+    font-style: italic;
+}
+
+.token.selector,
+.token.function,
+.token.builtin {
+    color: var(--gh-color-purple);
+}
+
+.token.string,
+.token.attr-value {
+    color: var(--gh-color-darkblue);
+}
+
+.token.punctuation,
+.token.variable,
+.token.class-name {
+    color: var(--gh-color-black);
+}
+
+.token.operator,
+.token.atrule,
+.token.keyword {
+    color: var(--gh-color-red);
+}
+
+.token.entity,
+.token.url,
+.token.symbol,
+.token.number,
+.token.boolean,
+.token.constant,
+.token.regex,
+.token.inserted {
+    color: var(--gh-color-blue);
+}
+
+.token.property,
+.token.attr-name,
+.token.special-attr,
+.token.tag {
+    color: var(--gh-color-navy);
+}
+
+/* Diff */
+
+.token.deleted {
+    color: var(--gh-color-red);
+}
+
+.token.inserted {
+    color: var(--gh-color-green);
+}
+
+/* Markdown */
+
+.language-md .token.front-matter {
+    color: var(--gh-color-green);
+}
+
+.language-md .token.title {
+    color: var(--gh-color-blue);
+    font-weight: bold;
+}
+
+.language-md .token.blockquote {
+    color: var(--gh-color-navy);
+}

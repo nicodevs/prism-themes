@@ -1,0 +1,16 @@
+{
+  "name": "@nicodevs/prism-themes",
+  "version": "0.0.1",
+  "description": "A collection of PrismJS themes",
+  "main": "",
+  "files": [
+    "themes"
+  ],
+  "exports": {
+    "./gh-light.css": "./themes/gh-light.css"
+  },
+  "type": "module",
+  "keywords": ["prismjs", "syntax-highlighting", "themes", "css"],
+  "author": "Nico Devs",
+  "license": "MIT"
+}
