@@ -1,12 +1,13 @@
 {
   "name": "@nicodevs/prism-themes",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of PrismJS themes",
   "files": [
     "themes"
   ],
   "exports": {
-    "./gh-light.css": "./themes/gh-light.css"
+    "./gh-light.css": "./themes/gh-light.css",
+    "./gh-dark.css": "./themes/gh-dark.css"
   },
   "type": "module",
   "keywords": ["prismjs", "syntax-highlighting", "themes", "css"],

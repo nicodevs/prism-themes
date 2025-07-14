@@ -1,24 +1,25 @@
 /**
- * GH Light theme for Prism.JS
+ * GH Dark theme for Prism.JS
  *
  * @author Nico Devs
  * @license MIT 2025
  */
 
 :root {
-    --gh-light-background: #ffffff;
-    --gh-light-highlight: #0969da20;
-    --gh-light-muted: #59636E;
-    --gh-light-black: #1F2328;
-    --gh-light-blue: #0a3069;
-    --gh-light-red: #cf222e;
-    --gh-light-purple: #6639BA;
-    --gh-light-green: #28a745;
-    --gh-light-orange: #ffa500;
+    --gh-dark-background: #0d1117;
+    --gh-dark-highlight: #79c0ff33;
+    --gh-dark-muted: #9198a1;
+    --gh-dark-gray: #c9d1d9;
+    --gh-dark-red: #ff7b72;
+    --gh-dark-purple: #d2a8ff;
+    --gh-dark-green: #3fb950;
+    --gh-dark-orange: #ffa500;
+    --gh-dark-light-blue: #a5d6ff;
 }
 
 code[class*="language-"],
 pre[class*="language-"] {
+    color: var(--gh-dark-gray);
     font-family: monospace;
     direction: ltr;
     text-align: left;
@@ -29,25 +30,25 @@ pre[class*="language-"] {
     line-height: 2;
     tab-size: 4;
     hyphens: none;
-    color: var(--gh-light-black);
 }
 
 pre::-moz-selection, pre ::-moz-selection,
 code::-moz-selection, code ::-moz-selection,
 pre::selection, pre ::selection,
 code::selection, code ::selection {
-    background: var(--gh-light-highlight);
+    background: var(--gh-dark-highlight);
 }
 
 pre[class*="language-"] {
+    background-color: var(--gh-dark-background);
     padding: 1em;
     overflow: auto;
-    background-color: var(--gh-light-background);
 }
 
 :not(pre) > code[class*="language-"] {
+    background: var(--gh-dark-background);
+    border-radius: .25rem;
     padding: .125rem .375rem;
-    background: var(--gh-light-background);
 }
 
 .token.bold {
@@ -62,54 +63,73 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-    color: var(--gh-light-muted);
+    color: var(--gh-dark-muted);
     font-style: italic;
 }
 
+.token.attr-name,
 .token.selector,
 .token.function,
 .token.builtin {
-    color: var(--gh-light-purple);
+    color: var(--gh-dark-purple);
 }
 
 .token.string,
 .token.attr-value {
-    color: var(--gh-light-blue);
+    color: var(--gh-dark-light-blue);
 }
 
 .token.punctuation,
 .token.variable,
 .token.class-name {
-    color: var(--gh-light-black);
+    color: var(--gh-dark-gray);
 }
 
 .token.operator,
 .token.atrule,
 .token.keyword {
-    color: var(--gh-light-red);
+    color: var(--gh-dark-red);
 }
 
 .token.symbol {
-    color: var(--gh-light-orange);
+    color: var(--gh-dark-orange);
+}
+
+.token.entity,
+.token.url,
+.token.number,
+.token.boolean,
+.token.constant,
+.token.regex,
+.token.inserted {
+    color: var(--gh-dark-light-blue);
+}
+
+.token.property {
+    color: var(--gh-dark-gray);
+}
+
+.token.tag {
+    color: var(--gh-dark-green);
 }
 
 .token.deleted {
-    color: var(--gh-light-red);
+    color: var(--gh-dark-red);
 }
 
 .token.inserted {
-    color: var(--gh-light-green);
+    color: var(--gh-dark-green);
 }
 
 .language-md .token.front-matter {
-    color: var(--gh-light-success);
+    color: var(--gh-dark-green);
 }
 
 .language-md .token.title {
-    color: var(--gh-light-purple);
+    color: var(--gh-dark-light-blue);
     font-weight: bold;
 }
 
 .language-md .token.blockquote {
-    color: var(--gh-light-purple);
+    color: var(--gh-dark-green);
 }
