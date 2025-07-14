@@ -10,7 +10,7 @@
     --gh-light-highlight: #0969da20;
     --gh-light-muted: #59636E;
     --gh-light-black: #1F2328;
-    --gh-light-blue: #0a3069;
+    --gh-light-blue: #0550ae;
     --gh-light-red: #cf222e;
     --gh-light-purple: #6639BA;
     --gh-light-green: #28a745;
@@ -66,12 +66,18 @@ pre[class*="language-"] {
     font-style: italic;
 }
 
+.token.attr-name,
 .token.selector,
 .token.function,
 .token.builtin {
     color: var(--gh-light-purple);
 }
 
+.token.property {
+    color: var(--gh-light-black);
+}
+
+.token.tag,
 .token.string,
 .token.attr-value {
     color: var(--gh-light-blue);
